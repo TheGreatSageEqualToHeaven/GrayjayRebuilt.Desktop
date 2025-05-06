@@ -5,8 +5,8 @@ A decompiled version of Grayjay.Desktop that can be compiled with your own chang
 ### Build instructions
 
 - Build `Grayjay.Desktop.CEF` with dotnet.
-- Copy `cef` and `wwwroot` from the futo release of `Grayjay.Desktop`
-- You have rebuilt Grayjay
+- Copy `cef` and `wwwroot` from the futo release of `Grayjay.Desktop` to the build directory.
+- You have rebuilt Grayjay.
   
 ### Why?
 
