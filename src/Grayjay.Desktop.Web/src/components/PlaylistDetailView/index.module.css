@@ -1,0 +1,26 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+    height: calc(100% - 24px);
+}
+
+.header {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 29px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.containerFilters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 12px;
+    margin-right: 12px;
+    width: calc(100% - 24px);
+    gap: 12px;
+    margin-top: 24px;
+}
