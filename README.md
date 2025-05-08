@@ -10,7 +10,7 @@ A decompiled version of Grayjay.Desktop that can be compiled with your own chang
 
   **additional steps for linux and mac**: libsodium.dll is the only shared library provided for `SyncShared`, empty templates for `libsodium.dylib` and `libsodium.so` are in the project that you will need to replace.  
 
-  All compiled executables in this project are from `futo-org`'s github, gitlab or existing releases.  
+  **note**: All compiled executables in this project are from `futo-org`'s github, gitlab or existing releases.  
   
 ### Why?
 
