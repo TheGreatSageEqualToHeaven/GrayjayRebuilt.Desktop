@@ -4,14 +4,18 @@ A decompiled version of Grayjay.Desktop that can be compiled with your own chang
 
 ### Build instructions
 
-- Build `Grayjay.Desktop.CEF` with dotnet.
+- Build `Grayjay.Desktop.CEF` with dotnet on `release` configuration.
 - Copy `cef` and `wwwroot` from the futo release of `Grayjay.Desktop` to the build directory.
 - You have rebuilt Grayjay.
 
   **additional steps for linux and mac**: libsodium.dll is the only shared library provided for `SyncShared`, empty templates for `libsodium.dylib` and `libsodium.so` are in the project that you will need to replace.  
 
-  All compiled executables in this project are from `futo-org`'s github, gitlab or existing compiled executables.  
-  
+  **note**: All compiled executables in this project are from `futo-org`'s github, gitlab or existing releases.  
+
+### Github limitations
+
+Github appears to limit the file size you can download when cloning with git or directly downloading so I have included a source code release that you can download which may be able to get past the restriction.
+
 ### Why?
 
 I wanted to have Grayjay always on top.
