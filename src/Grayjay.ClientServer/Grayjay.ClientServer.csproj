@@ -33,15 +33,53 @@
 
   <ItemGroup>
     <ContentWithTargetPath Include="deps/win-x64/FUTO.Updater.Client.exe" Condition="'$(RuntimeIdentifier)'=='win-x64'">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>     
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <TargetPath>FUTO.Updater.Client.exe</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="deps/win-x64/FUTO.Updater.Client.Old.exe" Condition="'$(RuntimeIdentifier)'=='win-x64'">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <TargetPath>FUTO.Updater.Client.Old.exe</TargetPath>
     </ContentWithTargetPath>
     <ContentWithTargetPath Include="deps/win-x64/ffmpeg.exe" Condition="'$(RuntimeIdentifier)'=='win-x64'">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <TargetPath>ffmpeg.exe</TargetPath>
     </ContentWithTargetPath>
+    
+    <ContentWithTargetPath Include="deps/linux-x64/FUTO.Updater.Client" Condition="'$(RuntimeIdentifier)'=='linux-x64'">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <TargetPath>FUTO.Updater.Client</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="deps/linux-x64/ffmpeg" Condition="'$(RuntimeIdentifier)'=='linux-x64'">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <TargetPath>ffmpeg</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="deps/linux-arm64/FUTO.Updater.Client" Condition="'$(RuntimeIdentifier)'=='linux-arm64'">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <TargetPath>FUTO.Updater.Client</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="deps/linux-arm64/ffmpeg" Condition="'$(RuntimeIdentifier)'=='linux-arm64'">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <TargetPath>ffmpeg</TargetPath>
+    </ContentWithTargetPath>
+    
+    <ContentWithTargetPath Include="deps/osx-x64/ffmpeg" Condition="'$(RuntimeIdentifier)'=='osx-x64'">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <TargetPath>ffmpeg</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="deps/osx-arm64/ffmpeg" Condition="'$(RuntimeIdentifier)'=='osx-arm64'">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+      <TargetPath>ffmpeg</TargetPath>
+    </ContentWithTargetPath>
+    
     <Content Include="logo.ico">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
