@@ -404,7 +404,7 @@ namespace Grayjay.Desktop.CEF
                 {
                     OnClosed?.Invoke();
                 };
-                _ = _window.SetAlwaysOnTopAsync(true); // CHANGES !! 
+                // _ = _window.SetAlwaysOnTopAsync(true); // CHANGES !! 
             }
 
             public async Task CloseAsync(CancellationToken cancellationToken = default)
